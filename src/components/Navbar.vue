@@ -7,19 +7,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <router-link to="/Home">
-        <a class="nav-link" href="#"> Home 
-        <span class="sr-only">(current)</span></a></router-link>
-      </li>
       <li class="nav-item">
-        <router-link to="Search">
-            <a class="nav-link" href="#"> Search </a>
+        <router-link to="/">
+            <a class="nav-link"> Products </a>
         </router-link>
       </li>
     </ul>
     <span>
-        <router-link to="Cart">
+        <router-link to="/Cart">
             <button type="button" class="btn btn-outline-dark"> Cart </button>
         </router-link>
     </span>
@@ -28,6 +23,8 @@
 </template>
 
 <script>
+  export default {
+    
+  }
 
-    import router from '../router/index.js';
 </script>

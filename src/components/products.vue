@@ -5,7 +5,7 @@
         </div>
         <div class="row">
             <div class="col-sm-2">
-                <product v-for="product in searched" :product="product" :cart="false"></product>
+                <Product v-for="product in searched" :product="product" :cart="false"></Product>
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
 
 <script>
     import {mapState, mapActions} from 'vuex';
-    import product from 'Product.vue';
+    import Product from './Product.vue';
 
     export default {
 
@@ -23,7 +23,7 @@
           }  
         },
         components:{
-            'product': product,
+            'Product': Product,
         },
 
         computed: {

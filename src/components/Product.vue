@@ -33,7 +33,6 @@ export default {
         this.addProduct(product);
     }
   }
-
 }
 </script>
 

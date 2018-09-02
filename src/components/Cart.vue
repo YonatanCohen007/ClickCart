@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="container title">Your Cart</h1>
-    <product v-for="product in selectedProducts" :product="product" :cart="true"></product>
+    <Product v-for="product in selectedProducts" :product="product" :cart="true"></Product>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
   },
 
   components: {
-    'product': Product
+    'Product': Product
   }
 }
 </script>
